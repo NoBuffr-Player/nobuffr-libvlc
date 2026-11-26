@@ -1,0 +1,231 @@
+libVLC 3.0.24 for macOS arm64, minimum macOS 15.0
+VLC source: https://download.videolan.org/pub/videolan/vlc/3.0.24/vlc-3.0.24.tar.xz
+VLC source sha256: e7cab503d1d7d5849b89d2cf0e1ee60d0ef6d012407791b644b9cfc0cc225fdf
+Toolchain: Xcode 27.2 Build version 27B52 SDK 27.2
+
+== VLC ==
+libvlc.dylib, libvlccore.dylib and every plugin below: LGPL-2.1-or-later
+(VLC 3.0.24; GPL-only modules are excluded, see the build script)
+
+== Third-party libraries, statically linked (source tarball | license | needed by) ==
+ffmpeg-8.1.2.tar.xz | LGPL-2.1-or-later (configured without --enable-gpl/--enable-version3/--enable-nonfree) | listed
+freetype-2.14.3.tar.xz | FTL (BSD-style with credit clause; chosen from the FTL/GPL-2.0 dual license) | listed
+fribidi-1.0.12.tar.xz | LGPL-2.1-or-later | listed
+harfbuzz-14.2.1.tar.xz | MIT | listed
+libass-0.17.5.tar.xz | ISC | listed
+libdvbpsi-1.3.3.tar.bz2 | LGPL-2.1-or-later | listed
+libebml-1.4.6.tar.xz | LGPL-2.1-or-later | matroska
+libgcrypt-1.12.2.tar.bz2 | LGPL-2.1-or-later | listed
+libgpg-error-1.61.tar.bz2 | LGPL-2.1-or-later | gcrypt
+libgsm_1.0.13.tar.gz | TU-Berlin-2.0 (permissive) | ffmpeg
+libmatroska-1.7.2.tar.xz | LGPL-2.1-or-later | listed
+libpng-1.6.58.tar.xz | libpng-2.0 | harfbuzz
+libxml2-2.15.3.tar.xz | MIT | listed
+openjpeg-2.5.4.tar.gz | BSD-2-Clause | ffmpeg
+soxr-0.1.3-Source.tar.xz | LGPL-2.1-or-later | listed
+utfcpp-3.2.5.tar.gz | BSL-1.0 | ebml
+zlib-1.3.2.tar.xz | Zlib | ffmpeg, freetype2, png
+
+== System frameworks (not redistributed) ==
+TLS: Security.framework (SecureTransport). Decoding: VideoToolbox. Audio: CoreAudio.
+
+== Plugins (97) ==
+adaptive
+adpcm
+amem
+araw
+asf
+attachment
+audio_format
+auhal
+avcodec
+avi
+blend
+cache_block
+cache_read
+cc
+chain
+console_logger
+cvdsub
+cvpx
+dvbsub
+es
+filesystem
+flacsys
+float_mixer
+freetype
+g711
+gain
+grey_yuv
+h26x
+http
+https
+i420_nv12
+i420_rgb
+i420_yuy2
+i422_i420
+i422_yuy2
+inflate
+integer_mixer
+libass
+lpcm
+memory_keystore
+mkv
+mp4
+mpgv
+packetizer_a52
+packetizer_av1
+packetizer_copy
+packetizer_dts
+packetizer_flac
+packetizer_h264
+packetizer_hevc
+packetizer_mlp
+packetizer_mpeg4audio
+packetizer_mpeg4video
+packetizer_mpegaudio
+packetizer_mpegvideo
+packetizer_vc1
+playlist
+prefetch
+ps
+rawvideo
+remap
+rtp
+rv32
+scale
+scaletempo
+scte18
+scte27
+securetransport
+simple_channel_mixer
+skiptags
+soxr
+spdif
+spudec
+stl
+subsdec
+substx3g
+subsusf
+subtitle
+svcdsub
+swscale
+tcp
+telx
+textst
+tospdif
+trivial_channel_mixer
+ts
+ttml
+udp
+ugly_resampler
+videotoolbox
+vmem
+wav
+webvtt
+xml
+yuvp
+yuy2_i420
+yuy2_i422
+
+== sha256 ==
+102aed6746c0d11ad9c2c509c18a1b9dc6947636edb8240aca55cbb237573c38  lib/libvlc.dylib
+c68e9ac9a6750afb07f589108d85301f797d0391aa0bfb7bd88bb722d2c26ba0  lib/libvlccore.dylib
+0f830b8d00a41a1c5311707a9be0fdccf2a7e53de65f613b7ec8b1e2e9562967  plugins/libadaptive_plugin.dylib
+335296d8b8812afdbfecd68b21785882734f89a303c2a4979be4e7d645ba0f9b  plugins/libadpcm_plugin.dylib
+dabd3ce95ebafa34501d79501a7fbf75dc44861bb82cd0e57eafc6250b9b06ce  plugins/libamem_plugin.dylib
+b40fc15cd9eb63dc66bf3a01920d0fd9b8ccef368dad54c19556ae1667a6c357  plugins/libaraw_plugin.dylib
+3c68c28693799d28fefb1339565ac7b0bc952c06aee4f8e17d0c155a32b1f176  plugins/libasf_plugin.dylib
+4f7b47d4978f68a469c74db36e292ffc5f065000fbd7d42d7002cceb51da478a  plugins/libattachment_plugin.dylib
+67ed806c11b3ceeafdfd7e61208dec81c9c1521be7deae75080e55feb40ebe4e  plugins/libaudio_format_plugin.dylib
+92b65faf826d2f71e127c5f94709e72f25bf9059e3be6e66147a65985303a7fa  plugins/libauhal_plugin.dylib
+d3650f5c37c40958af39e22971eb3e61210a9db385e420836f34911fab36235f  plugins/libavcodec_plugin.dylib
+5ff95bec9c8aac563c04f84fc29680e8eb9ee0446dd22185c2fa048737ec0800  plugins/libavi_plugin.dylib
+b6cb4a11e16686c2f0d5bba9e5084d136f0dad58d1e2f0f0e403a1eb5707aab2  plugins/libblend_plugin.dylib
+1b55d066acd89e26beff070e07b4bbe76ef980bd8dbde5ca78ad3ad870d7cd14  plugins/libcache_block_plugin.dylib
+1928cd0e670072571a2bc5224d59b8408ca8670bf0b04e3f426331f2d081b358  plugins/libcache_read_plugin.dylib
+dff82547cc0b34c3f3e720a87bdad32c046fe5b6d85af1a8db7a627f8ab3566e  plugins/libcc_plugin.dylib
+3b5cafe3c1915ad35ae242e48fe1c191a20b6653c275c51364d50245ccb6ce7f  plugins/libchain_plugin.dylib
+be657afe6c3004c400f84c657353a695e44c5aa07979fa12f006f6a70332566b  plugins/libconsole_logger_plugin.dylib
+224b366bcd01d8c6a9319b5c92541fcc4566a8a70bac521398493a5a5e9c707c  plugins/libcvdsub_plugin.dylib
+ad2764ad792a4d2273d930cc578089bb698ccbf3e458589126d8858baaa8be82  plugins/libcvpx_plugin.dylib
+d5b1cb7cabf0298988b009e274fb9a60204ff83884e2ac441bba905096411248  plugins/libdvbsub_plugin.dylib
+1699b6a243829a4f0b3c32c536495651e747d088da718cb35234e4cc14c1b975  plugins/libes_plugin.dylib
+d5c40368ed1790664cc8aec619868cfb7edc81bc124161298ccd546732a72f5a  plugins/libfilesystem_plugin.dylib
+f10c1f08ffd89af33a3848fe2e0a286576d495e97d5651609b45ff3e776e2bd6  plugins/libflacsys_plugin.dylib
+44ef0d74963a535b9a60a63ea4d684a3985ff400ca8a0a6347efe485b7fba6c8  plugins/libfloat_mixer_plugin.dylib
+15c83834e4fb34f8ae31eae4e5aabaace3da213fea36936aa10c13cdbbfd8b4e  plugins/libfreetype_plugin.dylib
+13eed3c301a24a4d20bf4c88fbdc0353600e981c8fed06ebfa645f677c846dac  plugins/libg711_plugin.dylib
+352fd0fd33688dd8dc8e6dd53b666a5e5468b7ae54ea24f7d4c665c9457ead42  plugins/libgain_plugin.dylib
+11e47fcb6a811b0343f6bc766c7806d67088fc8e3b79cd9c3365e4167db8bf95  plugins/libgrey_yuv_plugin.dylib
+1368ea36c3b2cab97967df94e67bbac2ea38bce8d587d16562a05fd461f4f727  plugins/libh26x_plugin.dylib
+06562fdd0dc819d5ea2253aa710767c13ec4a2ab1b68407794742bfdb03d33d9  plugins/libhttp_plugin.dylib
+fea2c5627ccedbc0c68bf9677ac7585138bdfd578a930315a57ef78fdf3a9102  plugins/libhttps_plugin.dylib
+b4faf9ef63fe16aa8153e8e97691ddbe42d5760b3c4c77090a27474fee84bdd9  plugins/libi420_nv12_plugin.dylib
+901a3d6c6a032a03496cb9c0dc92b8be8d2c7e386b570bd94cb250011ddf0e49  plugins/libi420_rgb_plugin.dylib
+cabe41030f457e155ce7f2058fb90f799130d89156247691361b5edc08f689c7  plugins/libi420_yuy2_plugin.dylib
+956dfce206b27d939895ae8481f0fc8152e619ed67df8e5177d609983131e0b8  plugins/libi422_i420_plugin.dylib
+ab66aa6395f54a0fd4f527104ca8e6c0e9b92f2f046f6fff76b981e37db2dc59  plugins/libi422_yuy2_plugin.dylib
+61e68a9ce405fcf969eadb01688c91a4b8c8aa2266eb24fe6038eab02744a76c  plugins/libinflate_plugin.dylib
+4212f1b10af879bd16fc1f7240626d322f995d2625162166a97c2556cebadd58  plugins/libinteger_mixer_plugin.dylib
+aa9d960c5c3de1005e6d0e6684aa50f56729f087224e686bb9605c1bc69ed364  plugins/liblibass_plugin.dylib
+a39042e27966cb5df161294b362213001b776fe5a30570d8f1c6aecd85d7941a  plugins/liblpcm_plugin.dylib
+5c5725f844f28e92c002fd4e1f1771f91a74d7647ab503873f4876039ab645b7  plugins/libmemory_keystore_plugin.dylib
+e2364176a7c579bfd14cd203b0b0296abcd782e7508034f920066e90e3dedb90  plugins/libmkv_plugin.dylib
+13bf7ab1a6055acbe31196c4589b739df9235aa8df62a76e39676328cfc7058c  plugins/libmp4_plugin.dylib
+897efc8eb43f7caff3d8ce35c0178448b680a998ffb17b8c95d0e03accf6a168  plugins/libmpgv_plugin.dylib
+a654429aefa3073b738a7292b04d464ea7a4ad27014948b842cf77891a6e2cfe  plugins/libpacketizer_a52_plugin.dylib
+6495bce2605b3813e656b130c561941a41e24a91eeead54b59d54596c3bf4ca7  plugins/libpacketizer_av1_plugin.dylib
+710bce8dd0b301631551cc95534d3ecf0a0bd89c3366214eb2fec3d88ec0f550  plugins/libpacketizer_copy_plugin.dylib
+288cf690f733ed58fd1ec66450907dc78760f74321c58d4b0eae25a51a3b4896  plugins/libpacketizer_dts_plugin.dylib
+b8a7610159957c71cc8aa840b1ab053e434ba4b723a72356315f94529c415799  plugins/libpacketizer_flac_plugin.dylib
+54ec1e0c4e89fffc0073da47747d019c4f58a896b687fb3c7442792cfa479c9d  plugins/libpacketizer_h264_plugin.dylib
+694cf034a80476276488c8630f12f57e737b9c00d9adfdbfd059aa5a3e3ac725  plugins/libpacketizer_hevc_plugin.dylib
+359da92d0e2247ba7b0c6e6f6b5a2c32b10733d4ddd85c93626a591367be4044  plugins/libpacketizer_mlp_plugin.dylib
+292c611b967ca8ed35a87286c3ae24e0327ae4e7183e32c4ab083b90c2169e33  plugins/libpacketizer_mpeg4audio_plugin.dylib
+b3461dcf0a5131f7a4c69828156fcca443af84e8dbe7ff6dd26f1db82444f013  plugins/libpacketizer_mpeg4video_plugin.dylib
+8a0c2704d6c41e91bc9f14e4b9308a2509a91936fae86ceb3cd57f82b4d149ae  plugins/libpacketizer_mpegaudio_plugin.dylib
+752720b04a7dbe1dfd5237f7b439b9d998505d6c81b80af9549a3dfb93dfce0f  plugins/libpacketizer_mpegvideo_plugin.dylib
+d88f62d9a582c303f75b71688b33fe3775cdc2cee3cc89286b99083709a8c356  plugins/libpacketizer_vc1_plugin.dylib
+91a285f167d65a9358819e6bbc6bf9a92f7a7c994613298ed4514f764569cd09  plugins/libplaylist_plugin.dylib
+737ea90995c459be939a3c065aed9d526ad139220e18a4173981ecbbcde3550f  plugins/libprefetch_plugin.dylib
+05f84ef9131786d87fefa5e620cf3538dab1291323f1445a19937ea858d764d6  plugins/libps_plugin.dylib
+13e29832e2f4fac237c271bdf9aea76bfdc82265919885b07119c20fd50e2aa9  plugins/librawvideo_plugin.dylib
+c4dfd579fa0491f98dfa7325f074f6dcc376f1ecf8cea3d5ce1282a10d4ab502  plugins/libremap_plugin.dylib
+35e9502d5dd55d732fb41bdb2a89292aa6937eaaf802e61708307d091693791c  plugins/librtp_plugin.dylib
+b3ab5d59f85760892b61978a14dbc5bf2df6f4c11a773fed5472b42d9ac5b558  plugins/librv32_plugin.dylib
+d4b381e46ba2f7c47696568f4d34e27a0344e7a64128190d024f295bb35b1aa4  plugins/libscale_plugin.dylib
+51b780cd70374611cc1ee862e4b19459f492015762628acbb7871a9845f7b4cf  plugins/libscaletempo_plugin.dylib
+3f9ecf256d3f652f9e175b638231522adcded056df39137ea3a1588ddbd1294f  plugins/libscte18_plugin.dylib
+6dd3e2a0140f7ec7ef92ab6fb730818ba07ca6c8b6d445067929ee0f527c0654  plugins/libscte27_plugin.dylib
+85ea2f64241341956e9e1d5c3e54022c2c0f8ce093417c428590c9c1536ce271  plugins/libsecuretransport_plugin.dylib
+ca552f50a7045c2d38634f51b394eca73b709d8fb5691e3da3fa4524aa1d15b7  plugins/libsimple_channel_mixer_plugin.dylib
+26b09f7d3b5cb55ae45b2e6ccd4073acdd2f8588545490b64a9bf80c1847c1c8  plugins/libskiptags_plugin.dylib
+f1a2e8a1e7b67a5d86a1646a645b0207d8bf8ff4abd085b69ccc575eea9d947d  plugins/libsoxr_plugin.dylib
+d59ee52f3174b2667891b37074a079c4b380844464b67ef61aea348b76e0ef84  plugins/libspdif_plugin.dylib
+e41ce988f30aaed0c3b2cfb56b4b915998f3560791cc3cd37a202a0392f710e8  plugins/libspudec_plugin.dylib
+dd9dac80d3f12d98f1cc34f3fda15a7d09333842cc313261e3cabc2872837f37  plugins/libstl_plugin.dylib
+e29a7676cf873651729766dd9425fae144adad4b13cff51895db9af111051bd4  plugins/libsubsdec_plugin.dylib
+e405b605fdecbd17513117634b0565eecd84cef26c7795897b2af99768e72362  plugins/libsubstx3g_plugin.dylib
+e94354350ce3a19013f8de581cb6106026181a047aa734d122914d5f1f348938  plugins/libsubsusf_plugin.dylib
+4d0309b1c3029d3251be6d72866b1b3c49a55b55faec61d4dade18df81d3b9a9  plugins/libsubtitle_plugin.dylib
+f14cb04168aa0b724aa686a37013d45c299cb2ef5683abc5f57f89188cd010ca  plugins/libsvcdsub_plugin.dylib
+0b9de2997936e0c2c3470aeea245e000aec03ab16c4290b8514093ed163bc2cf  plugins/libswscale_plugin.dylib
+adea2e30b8437d4261962c17200191833a930cb711bc915f39fc949feb01a98c  plugins/libtcp_plugin.dylib
+9b8a9cdcdaf22c60f25d1aaf057efd4e6f19dd696d2d629ce32168f779d336b7  plugins/libtelx_plugin.dylib
+49c14effdf81f69c63af9d047c4d005e683997c6e5a3d0ea19efe9a371560267  plugins/libtextst_plugin.dylib
+def57ea73ea09c6881a9bb5a3ad7b48cbdad5c1be7a7f3c16717c70774c97f73  plugins/libtospdif_plugin.dylib
+7d1c32743ea96a642e9ddf7a1e209e16fcb3789ea305996feae76809a9eda535  plugins/libtrivial_channel_mixer_plugin.dylib
+a4e56bb8b684e192cfd84f7be48778234a0bbc4c9e3d2ebf8b19f0d40501cb4d  plugins/libts_plugin.dylib
+9a4bfa6548f1c32bb56d1373309d39257d08ea4b3203617b386aa19814d462a3  plugins/libttml_plugin.dylib
+2cee45387dbb26f121e61b9b0fbf4be3719be11d9092787710dca1fae76ffc6b  plugins/libudp_plugin.dylib
+79cce45ea56beae394550c33840e53ea31eeedffb39df64c8e2e8acb0493f255  plugins/libugly_resampler_plugin.dylib
+222eb62cb57dfdf8ff305d69d6047ea2c6a67493a4294bbe1105fefcf2a472a6  plugins/libvideotoolbox_plugin.dylib
+412f3b2bc2def6c509efd571f3590b65ca89fcc7c7e1a1507deb73c8ed099c0b  plugins/libvmem_plugin.dylib
+737e4d9b40908866f47d86582fdf67b5cfa23cafe56b6196a894fdcf943080e3  plugins/libwav_plugin.dylib
+4e921244b9202a8cba44232d3922e2955fe97ae56b151ba64919dce949b583c0  plugins/libwebvtt_plugin.dylib
+8f3357250c00a8806a1985bde4942761970e318ba95359b0dd5942e9b81459ae  plugins/libxml_plugin.dylib
+a10a8e3c1ded4ca30929f9212b6dca0397dfc7f7b971f35a46ab0522c815b4cf  plugins/libyuvp_plugin.dylib
+538b75fe5b24fe35693db1bdb27c9c05f4f217162fd9315beecfa2c7ba835eab  plugins/libyuy2_i420_plugin.dylib
+b315a3aba786bf4f77d2ec008984c980f924dd17a3f3f7a78bf4bb05aefcc5ef  plugins/libyuy2_i422_plugin.dylib
+869a7fc10011326036b4f83656d63ce06be62b56782a3eb034b482dcad6330ca  plugins/plugins.dat

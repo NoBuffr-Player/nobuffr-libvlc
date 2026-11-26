@@ -1,0 +1,9 @@
+build-libvlc-macos.sh and the documentation in this repository are
+Copyright (C) 2026 24 Ventures, LLC, and are licensed under the GNU Lesser General
+Public License, version 3 or (at your option) any later version, the same license as
+the scripts in the nobuffr-ffmpeg repository. The full texts are in LICENSES/LGPL-3.0.txt
+and LICENSES/GPL-3.0.txt.
+
+VLC and the third-party libraries the script builds are not part of this repository.
+They are downloaded unmodified from their upstream sources and remain under their own
+licenses and copyrights. VLC's own license text is in COPYING.LIB (LGPL-2.1).
